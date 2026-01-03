@@ -1,4 +1,4 @@
-package bruteforce;
+package baekjoon.bruteforce;
 
 import java.io.BufferedReader;
 import java.io.IOException;
