@@ -9,8 +9,13 @@ public class Heap_MoreSpicy {
         for(int num : scoville) {
             pq.add(num);
         }
-        // 최앞단 스코빌지수 < K 동안 반복
+
         int count = 0;
+        return simulation(K, pq, count);
+    }
+
+    private int simulation(int K, PriorityQueue<Integer> pq, int count) {
+        // 최앞단 스코빌지수 < K 동안 반복
         while(!pq.isEmpty() && pq.peek() < K) {
             if(pq.size() < 2) {
                 return -1;
